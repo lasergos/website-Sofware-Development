@@ -1,0 +1,61 @@
+@import 'header.scss';
+
+button{
+	text-transform: uppercase;
+	font-family: "Avenir-Roman";
+	font-size: 1rem;
+	color: white;
+	padding: 0.4rem;
+	background-color: $brand-color;
+	border: none;
+}
+
+#home{
+	height: 36.45833333333333vw;
+	position: relative;
+	.container{
+		height: inherit;
+		.row{
+			height: inherit;
+			.col-xs-16{
+				height: inherit;
+				.row{
+					height: inherit;
+				}
+			}
+		}
+	}
+}
+
+.info{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	transform: translateY(-50%);
+
+
+	.CReativity{
+		font-family: "Avenir-Light";
+		font-size: 4.9rem;
+		color: white;
+	}
+
+	.lifeStyle{
+		font-family: "Avenir-Roman";
+		font-size: 3rem;
+		color: black;
+		margin-top: -40px;
+	}
+
+	.LoremIpsum{
+		font-family: "Avenir-Roman";
+		font-size: 1rem;
+		color: $brand-color;
+		margin: -15px 15px 5px 20px;
+	}
+}
+
+button.brand{
+	@extend button;
+	float: right;
+}

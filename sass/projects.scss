@@ -1,0 +1,156 @@
+@import 'services.scss';
+
+#projects{
+	position: relative;
+	height: 65rem;
+}
+
+.gradient_proj{
+	background: repeating-linear-gradient(-45deg, white 0px, white 8px, #dbdbdb 8px, #dbdbdb 9px);
+	height: 57rem;
+	position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.projects_block{
+	text-align: center;
+	padding-top: 4.85rem;
+
+	.proj_img{
+		height: 20.7rem;
+		position: relative;
+		overflow: hidden;
+
+		.img_main{
+			height: 20.7rem;
+			
+		}
+
+		.proj_baground{
+			height: inherit;
+			width: 100%;
+		    position: absolute;
+		    top: 0;
+		    opacity: 0;
+		    transition: opacity .5s ease;
+		    z-index: 100;
+		    align-items: center;
+			justify-content: center;
+		    display: flex;
+
+		    .proj_cont{
+		    	display: flex;
+		    	height: 3.5rem;
+
+				.proj_heart{
+					height: 3.5rem;
+					width: 3.5rem;
+					background-color: $brand-color;
+					position: relative;
+					margin-right: 2.15rem;
+
+					.heart_icon{
+						color: white;
+						position: absolute;
+					    top: 50%;
+					    left: 50%;
+					    transform: translate(-50%, -50%);
+					}
+			    }
+
+			    .proj_link{
+					height: 3.5rem;
+					width: 3.5rem;
+					background-color: $aubergine-color;
+					position: relative;
+
+					.link_icon{
+						color: white;
+						position: absolute;
+					    top: 50%;
+					    left: 50%;
+					    transform: translate(-50%, -50%) rotateY(180deg);
+					}
+			    }
+
+			}
+		}
+		&:hover,
+		.proj_cont:hover {
+			.proj_baground {
+				opacity: 1;
+				background-color: rgba(147, 172, 204, 0.7);
+			}	
+
+		}
+
+	}
+
+	.proj_head{
+		@extend .head;
+		font-size: 1.75rem;
+		margin-top: 5rem;
+	}
+
+	.proj_text{
+		@extend .text;
+		font-family: "Avenir-Heavy";
+		margin-top: 1.4rem;
+	}
+
+	.proj_icon{
+		margin-top: 2rem;
+		margin-bottom: 2.3rem;
+		height: 9.6rem;
+		width: 9.7rem;
+		position: relative;
+
+		.img_icon{
+			left: 50%;
+			transform: translateX(50%);
+		}
+	}
+
+	.but_detals{
+		@extend button;
+		margin-top: 2.14rem;
+		background-color: $aubergine-color;
+	}
+
+	.block_1{
+		background-color: white;
+		border-bottom: 1px solid black;
+		
+		.proj_text{
+			color: rgb(232, 76, 61);
+		}
+	}
+	
+	.block_2{
+		background-color: white;
+		border-bottom: 1px solid black;
+				
+		.proj_text{
+			color: rgb(155, 88, 181);
+		}
+	}
+
+	.block_3{
+		background-color: white;
+		border-bottom: 1px solid black;
+		
+		.proj_text{
+			color: rgb(27, 188, 155);
+		}
+	}
+
+	.block_4{
+		background-color: white;
+		border-bottom: 1px solid black;
+		
+		.proj_text{
+			color: rgb(53, 152, 219);
+		}
+	}
+}

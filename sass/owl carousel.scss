@@ -1,0 +1,133 @@
+//------------owl carousel---------
+#owl{
+	position: absolute;
+	z-index: 1;
+}
+
+.my_dots {
+  position: absolute;
+  bottom: 22px;
+
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ .my_dot {
+   cursor: pointer;
+    width: 62px;
+    height: 4px;
+    background-color: white;
+    display: inline-block;
+    margin: 5px;
+    vertical-align: middle;
+    margin: 0 10px 0 10px;
+ }
+
+.my_dot.active {
+    width: 62px;
+    height: 4px;
+    background-color: $brand-color;
+}
+
+/**
+*  .nav-button - шаблон для наследования
+*/
+.nav-button {
+	height: 90px;
+	width: 90px;
+	border: 2px solid white;
+	background-color: #e9e9d7;
+	text-align: center;
+	cursor: pointer;
+	
+	&:hover {
+		background-color: #82cdc2;
+	}
+}
+
+.my_controls {
+	.container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		.left {
+			@extend .nav-button;
+			float: left;
+			transform: translateX(-100%);
+		}
+
+		.right {
+			@extend .nav-button;
+			float: right;
+			transform: translateX(100%);
+		}
+	}
+}	
+
+.arrows {
+	width: 100%;
+
+}
+
+.controlHandle{
+    background: transparent;
+    color: white;
+    font-size: 75px;
+	&:active {
+		color:#FFC0CB;
+	}
+}
+
+//========== #owl_projects ==============
+.my_proj_controls {
+	.container_proj {
+		position: absolute;
+		top: 28%;
+	    left: 50%;
+		transform: translate(-50%, -50%);
+		width: 105%;
+
+		.left_proj {
+			float: left;
+			transform: translateX(-100%);
+		}
+
+		.right_proj {
+			float: right;
+			transform: translateX(100%);
+		}
+	}
+}
+
+.controlHandle_proj{
+    background: transparent;
+    color: $brand-color;
+    font-size: 75px;
+	&:active {
+		color:#485461;
+	}
+}
+
+//==========  #our_team  ==============
+.my_team_controls {
+	.container_team {
+		
+		position: absolute;
+		top: 35%;
+	    left: 50%;
+		transform: translate(-50%, -50%);
+		width: 105%;
+		
+		.left_team {
+			float: left;
+			transform: translateX(-100%);
+		}
+
+		.right_team {
+			float: right;
+			transform: translateX(100%);
+		}
+	}
+}

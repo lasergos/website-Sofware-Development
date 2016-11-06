@@ -1,0 +1,191 @@
+@import 'clients.scss';
+
+$scale_1: 1rem "AvenirLTStd-Black";
+$scale_2: 0.85rem "Avenir-Roman";
+$gray: #cccccc;
+
+#contact{
+	height: 38.8rem;
+	background-color: $aubergine-color;
+	position: relative;
+}
+
+.contact_hight_block{
+	margin-top: 3.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.contact_begin{
+	:first-child{
+		font-family: 'Nexa-Slab-Bold';
+		font-size: 2vw;
+		color: $brand-color;
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -70%);
+	}
+
+	:last-child{
+		font-family: 'Nexa-Light';
+		font-size: 1vw;
+		color: white;
+		margin: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 20%);
+		white-space: nowrap;
+	}
+}
+
+.contact_middle{
+	display: $inline;
+	width: 100%;
+	color: $brand-color;
+	margin-top: 40px;
+	text-align: center;
+
+	i{
+		margin: 5.5px;
+		cursor: pointer;
+		background-color: white;
+	}
+
+	.skype_dive{
+		position: relative;
+
+		.skype{
+			position: absolute;
+			color: white;
+			background-color: $brand-color;
+			align-items:center;
+			text-align: center;
+			font-size: 18px;
+			left: 5px;
+			top: 5px;
+		}
+	}
+}
+
+.contact_end{
+	.contact_end_header{
+		text-transform: uppercase;
+		font: $scale_1;
+		color: $brand-color;
+	}
+
+	.contact_end_text{
+		font: $scale_2;
+		color: #fff;
+	}
+}
+
+.letter{
+	display:flex;
+	display: relative;
+	input{
+		border: $main_border;
+		width: calc(100% - 38px);
+	}
+
+	span {
+		background-color: white;
+		color: #cccccc;
+		border: $main_border;
+		cursor: pointer;
+		width: 38px;
+		height: 38px;
+		padding-top: 10px;
+    	padding-left: 8px;
+	}
+}
+
+// заглавная надпись
+.title_foot {
+	@extend .title;
+	position: relative;
+	font-size: 1.78rem;
+	color: $brand-color;
+
+	.title__line_foot {
+		@extend .title__line;
+		height: 1px;
+		background-color: #ccc;
+	}
+
+	.title__text_foot {
+		@extend .title__text;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		background-color: $aubergine-color;
+		padding: 0 20px;
+		white-space: nowrap;
+	}
+}
+
+.contact_info{
+
+}
+
+.city{
+	font: $scale_1;
+	color: $gray;
+	text-transform: uppercase;
+}
+.address{
+	font: $scale_2;
+	color: $gray;
+	margin-bottom: 1.28rem;
+}
+.tel_num{
+	display: flex;
+}
+.tel{
+	font: $scale_1;
+	color: $brand-color;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	p{
+		margin: 0;
+	}
+}
+.num{
+	font: $scale_2;
+	color: $gray;
+	margin-left: 5px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	p{
+		margin: 0;
+	}
+}
+
+.div_end{
+	margin-top:4.6rem;
+	text-align: center;
+}
+
+.end{
+	font: $scale_2;
+	color: $gray;
+}
+
+.contact_gradient{
+	background: repeating-linear-gradient(-45deg, transparent 0px, transparent 8px, #4b4a57 8px, #4b4a57 9px);
+	height: 22.4rem;
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 230px;
+}

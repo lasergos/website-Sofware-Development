@@ -1,0 +1,70 @@
+@import 'projects.scss';
+
+#our_team{
+	position: relative;
+}
+.team_block{
+	text-align: center;
+	padding-top: 68px;
+	
+	.team_head{
+		@extend .head; 
+		margin-top: 5rem;
+	}
+
+	.team_text{
+		@extend .text; 
+	}
+
+	.but_detals{  
+		@extend button;
+		background-color: $aubergine-color;
+	}
+
+	.team_img{
+		height: 290px;
+		overflow: hidden;
+		width: 100%;
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);  
+		filter: grayscale(100%);
+
+		&:hover {
+			-webkit-filter: grayscale(0%);
+			-moz-filter: grayscale(0%);
+			-o-filter: grayscale(0%);
+			-ms-filter: grayscale(0%);  
+			filter: grayscale(0%);
+		}
+
+	}	
+
+.brandIcons{
+		display: $inline;
+		width: 100%;
+		color: $brand-color;
+		margin-top: 40px;
+		text-align: center;
+
+		i{
+			margin: 5.5px;
+			cursor: pointer;
+		}
+
+		.skype_dive{
+			position: relative;
+
+			.skype{
+				position: absolute;
+				color: white;
+				background-color: $brand-color;
+				align-items:center;
+				text-align: center;
+				left: 6px;
+				top: 6px;
+			}
+		}
+	}
+}

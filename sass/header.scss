@@ -1,0 +1,111 @@
+$aubergine-color: rgb(55, 54, 69);
+$brand-color: rgb(110, 155, 202);
+$inline: inline-flex;
+$main_border: 1px solid rgb(204, 204, 204);
+$gray: rgb(204, 204, 204);
+
+$title: 1.9rem "AvenirLTStd-Black";
+
+header{
+	position: fixed;
+	z-index: 1000;
+	left: 50%;
+	transform: translate(-50%);
+
+	.head_col{
+		
+		margin-top: 7vh;
+		background-color: white;
+		height: 13vh;
+		transition: margin .2s ease;
+	}
+
+	.head_row{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		height: inherit;
+		box-shadow: 0em 0.4em 5px rgba(122,122,122,0.5);
+	}
+
+	.head_left{
+		background-color: $aubergine-color;
+		height: inherit;
+	    position: relative;
+	    left: -1px;
+
+
+		:first-child{
+			font-family: 'Nexa-Slab-Bold';
+			font-size: 2vw;
+			color: $brand-color;
+			margin: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -70%);
+		}
+
+		:last-child{
+			font-family: 'Nexa-Light';
+			font-size: 1vw;
+			color: white;
+			margin: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 20%);
+			white-space: nowrap;
+		}
+	}
+
+	ol{
+		padding-left: 0;
+
+		li{
+			display: inline-block;
+		    margin: 1rem 0.4rem 0 1rem;
+		    font-family: 'Avenir-Roman';
+		    font-size: 0.9rem;
+
+		    a{
+				color: rgb(55, 54, 69);
+		    	text-decoration: none;
+
+		    	&:hover {
+		    		text-decoration: none;
+		    	}
+			}
+		}
+	}
+
+	.brandIcons{
+		display: $inline;
+		color: $brand-color;
+
+		i{
+			margin: 5.5px;
+			cursor: pointer;
+		}
+	}
+
+	.search{
+		display: $inline;
+	}
+
+	input{
+		border: $main_border;
+		width: calc(100% - 24px);
+	}
+
+	span {
+		background-image: url('../img/search.png');
+		background-repeat: no-repeat;
+		background-position: center, center;
+		border: $main_border;
+		cursor: pointer;
+		width: 24px;
+		height: 24px;
+		display: inline-block;
+	}
+}

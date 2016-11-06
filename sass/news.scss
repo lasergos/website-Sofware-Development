@@ -1,0 +1,146 @@
+@import 'team.scss';
+
+#news{
+	position: relative;
+	height: 44rem;
+}
+.gradient{
+	background: repeating-linear-gradient(-45deg, white 0px, white 8px, #dbdbdb 8px, #dbdbdb 9px);
+	height: 30.7rem;
+	position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.news_left, .news_right{
+	height: 21rem;
+	margin-top: 5rem;
+	
+	.new_body{
+		background: white;
+		width: 100%;
+		height: inherit;
+
+		//----------------
+		.data{
+			position: relative;
+			height: 5.5rem;
+			border-right: 1px solid $gray;
+			margin-top: 1.5rem;
+			margin-bottom: 1.28rem;
+			display: flex;
+		    flex-direction: column;
+		    justify-content: space-between;
+		}
+
+		.news_mon{
+			@extend .head;
+			margin: 0;
+			line-height: 1.5rem;
+		}
+
+		.news_day{
+			font-family: '"Avenir-Heavy"';
+			font-size: 3.5rem;
+			color: $brand-color;
+			margin: 0;
+    		line-height: 2.5rem;
+		}
+
+		.news_year{
+			@extend .text;
+			font-size: 1.07rem;
+			margin: 0;
+			text-align: center;
+			line-height: 1rem;
+		}
+
+		//------------------------
+		.news_icon{
+			position: relative;
+			height: 10.7rem;
+			border-right: 1px solid $gray;
+			margin-bottom: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.news_heart{
+			color: $brand-color;
+		    text-align: center;
+		}
+
+		.news_link{
+			@extend .news_heart;
+			transform: rotateY(180deg);
+		}
+
+		.news_comment{
+			@extend .news_heart;
+			margin-bottom: 0;
+		}
+
+		//------------------------
+		.news_head{
+			margin-top: 1.5rem;
+			margin-bottom: 1.28rem;
+			display: flex;
+		}
+
+		.news_info{
+			margin-left: 0.7rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.news_info_text{
+			height: 0.85rem;
+			display: flex;
+			justify-content: space-between;
+			.begin{
+				text-transform: uppercase;
+				font-family: "Avenir-Roman";
+				font-size: 0.85rem;
+				color: $gray;
+			}
+			.middle{
+				@extend .begin;
+				color: $aubergine-color;
+			}
+			.end{
+				@extend .begin;
+				color: $brand-color;
+			}
+
+			.right{
+				@extend .begin;
+				text-align: right;
+			}
+		}
+
+		//---------------------
+		.news_text{
+			.news_header{
+				@extend .head;
+				word-spacing: 3px;
+				letter-spacing: -1px;
+			}
+
+			.news_text_text{
+				@extend .text;
+				letter-spacing:-0.5px;
+				margin-top: 0;
+				margin-bottom: 0;
+				text-align: justify;
+			}
+		}
+
+		.but_news{
+			@extend button;
+			background-color: $aubergine-color;
+			float: right;
+		}
+	}
+}
