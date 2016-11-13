@@ -1,13 +1,18 @@
-@import 'clients.scss';
-
 $scale_1: 1rem "AvenirLTStd-Black";
 $scale_2: 0.85rem "Avenir-Roman";
 $gray: #cccccc;
 
 #contact{
-	height: 38.8rem;
+	//height: 38.8rem;
 	background-color: $aubergine-color;
 	position: relative;
+
+
+	.gradient_back {
+		background: repeating-linear-gradient(-45deg, transparent 0px, transparent 8px, #4b4a57 8px, #4b4a57 9px);
+		background-color: #373645;
+	}
+
 }
 
 .contact_hight_block{
@@ -45,29 +50,30 @@ $gray: #cccccc;
 .contact_middle{
 	display: $inline;
 	width: 100%;
-	color: $brand-color;
 	margin-top: 40px;
 	text-align: center;
 
-	i{
+	a{
 		margin: 5.5px;
+		background-color: $brand-color;
+		height:24px;
+		width:24px;
 		cursor: pointer;
-		background-color: white;
-	}
 
-	.skype_dive{
-		position: relative;
-
-		.skype{
-			position: absolute;
-			color: white;
-			background-color: $brand-color;
-			align-items:center;
-			text-align: center;
+		i{
 			font-size: 18px;
-			left: 5px;
-			top: 5px;
+			text-align: center;
+			color: white;
+			vertical-align: middle;
 		}
+	}
+	
+	.skype{
+		color: white;
+		background-color: $brand-color;
+		align-items:center;
+		text-align: center;
+		font-size: 18px;
 	}
 }
 
@@ -86,10 +92,31 @@ $gray: #cccccc;
 
 .letter{
 	display:flex;
-	display: relative;
+
+	form{
+		display: $inline;
+		input[name="text_letter"] {
+			border: $main_border;
+			width: calc(100% - 2.4rem);
+		}
+
+		.letter_submit {
+			background-image: url('../img/letter.png');
+			background-repeat: no-repeat;
+			background-position: center, center;
+			background-color: white;
+			border: $main_border;
+			cursor: pointer;
+			width: 2.4rem;
+			height: 2.4rem;
+			display: inline-block;
+		}
+	}
+
 	input{
 		border: $main_border;
 		width: calc(100% - 38px);
+		font-size: 1.4rem;
 	}
 
 	span {
@@ -109,6 +136,7 @@ $gray: #cccccc;
 	@extend .title;
 	position: relative;
 	font-size: 1.78rem;
+	margin-bottom: 0;
 	color: $brand-color;
 
 	.title__line_foot {
@@ -131,7 +159,7 @@ $gray: #cccccc;
 }
 
 .contact_info{
-
+	margin-top: 6.5vh;
 }
 
 .city{
@@ -173,6 +201,7 @@ $gray: #cccccc;
 
 .div_end{
 	margin-top:4.6rem;
+	margin-bottom: 3.9rem;
 	text-align: center;
 }
 
@@ -189,3 +218,5 @@ $gray: #cccccc;
     left: 0;
     top: 230px;
 }
+
+

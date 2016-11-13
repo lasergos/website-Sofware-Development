@@ -6,15 +6,17 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">	
-	<link rel="stylesheet" href="plagins/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="plagins/bootstrap/css/bootstrap-theme.css">
-	<!-- <script src="plagins/jquery/jquery-3.1.0.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<link rel="stylesheet" href="plagins/owl.carousel2/owl.carousel/assets/owl.css">
-	<link rel="stylesheet" type="text/css" href="fonts/font/flaticon.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" href="plugins/plugin_dropdownList/dropdownList.css">
+	<!-- <script src="plugins/jquery/jquery-3.1.0.min.js"></script> -->
+	<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>-->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" href="plugins/owl.carousel2/owl.carousel/assets/owl.css">
+	<link rel="stylesheet" type="text/css" href="fonts/flaticon_font/flaticon.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class='header'>
@@ -29,30 +31,96 @@
 						<div class="col-xs-13 head_right">
 							<div class="row">
 								<div class="col-xs-1">
-									<a href="#home">
-										<img class="home" src="img/home.png" alt="">
-									</a>
+									<div class="home_div">
+										<a href="#home">
+											<img class="home" src="img/home.png" alt="">
+										</a>
+									</div>
+									
 								</div>
 								<div class="col-xs-10">
 									<ol>
-										<li><a href="#about">ABOUT</a></li>
-										<li><a href="#services">SERVICES</a></li>
-										<li><a href="#projects">PROJECTS</a></li>
-										<li><a href="#our_team">TEAM</a></li>
-										<li><a href="#new">NEWS</a></li>
-										<li><a href="#clients">CLIENTS</a></li>
-										<li><a href="#contact">CONTACT</a></li>
+										<li class="main_li">
+											<a href="#about">ABOUT</a>
+											<!-- <ul class="inner">
+												<li><a href="#" class="inner_a">web</a></li>
+												<li><a href="#" class="inner_a">php</a></li>
+												<li><a href="#" class="inner_a">js</a></li>
+												<li><a href="#" class="inner_a">html</a></li>
+											</ul> -->
+										</li>
+										<li class="main_li">
+											<a href="#services">SERVICES</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">web development</a></li>
+												<li><a href="#" class="inner_a">app development</a></li>
+												<li><a href="#" class="inner_a">php development</a></li>
+												<li><a href="#" class="inner_a">wordpress</a></li>
+											</ul>
+										</li>
+										<li class="main_li">
+											<a href="#projects">PROJECTS</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">dating app</a></li>
+												<li><a href="#" class="inner_a">wedding site</a></li>
+												<li><a href="#" class="inner_a">travel guide</a></li>
+												<li><a href="#" class="inner_a">baby e-commerce</a></li>
+											</ul>
+										</li>
+										<li class="main_li">
+											<a href="#our_team">TEAM</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">david morillo</a></li>
+												<li><a href="#" class="inner_a">isabella doomer</a></li>
+												<li><a href="#" class="inner_a">arthur simon</a></li>
+												<li><a href="#" class="inner_a">amanda aman</a></li>
+											</ul>
+										</li>
+										<li class="main_li">
+											<a href="#news">NEWS</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">bob marley</a></li>
+												<li><a href="#" class="inner_a">michale rosso</a></li>
+												<li><a href="#" class="inner_a">bob marley2</a></li>
+												<li><a href="#" class="inner_a">michale rosso2</a></li>
+											</ul>
+										</li>
+										<li class="main_li">
+											<a href="#clients">CLIENTS</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">compact</a></li>
+												<li><a href="#" class="inner_a">tv digital</a></li>
+												<li><a href="#" class="inner_a">changas</a></li>
+												<li><a href="#" class="inner_a">finance</a></li>
+											</ul>
+										</li>
+										<li class="main_li">
+											<a href="#contact">CONTACT</a>
+											<ul class="inner">
+												<li><a href="#" class="inner_a">sidney</a></li>
+												<li><a href="#" class="inner_a">san francisco</a></li>
+												<li><a href="#" class="inner_a">amsterdam</a></li>
+												<li><a href="#" class="inner_a">tokyo</a></li>
+											</ul>
+										</li>
 									</ol>
 								</div>
 								<div class="col-xs-2 brandIcons">
-									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-									<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-									<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+									<a href="#">
+										<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+									</a>
+									<a href="#">
+										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+									</a>
 								</div>
 								<div class="col-xs-3 search">
-									<input  type="text"/>
-									<span>
-									</span>
+									<form action="#">
+										<input  type="text" name="text"/>
+										<input type="submit" class="search_submit" value="">
+									</form>
 								</div>
 							</div>
 						</div>
@@ -83,6 +151,7 @@
 			</div>
 		</div>
 	</section>
+	<!-- ===============================  services  ===================== -->
 	<section id="services">
 		<div class="container">
 			<div class="row">
@@ -137,21 +206,33 @@
 		</div>
 	</section>
 	<!-- ===============================  PROJECT  ===================== -->
-	<section id="projects">
+	<section>
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-16">
 					<div class="title">
-						<div class="title__line"></div>		
+						<div class="title__line"></div>
 						<div class="title__text">projects</div>
 					</div>
 				</div>
 			</div>
-			<div class="gradient_proj"></div>
+		</div>
+	</section>
+	<section id="projects">
+		<div class="container">
+			<!--<div class="row">-->
+				<!--<div class="col-xs-16">-->
+					<!--<div class="title">-->
+						<!--<div class="title__line"></div>		-->
+						<!--<div class="title__text">projects</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div class="gradient_proj"></div>-->
 			<div id="owl_projects">
 				<div class="item">
 					<div class="row projects_block content">
-						<div class="col-sm-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_1">
 								<div class="proj_img">
 									<img class="img_main" src="img/dating_app.png">
@@ -174,7 +255,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_2">
 								<div class="proj_img">
 									<img class="img_main" src="img/wedding_site.png">
@@ -198,7 +279,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_3">
 								<div class="proj_img">
 									<img class="img_main" src="img/travel_guide.png">
@@ -221,7 +302,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_4">
 								<div class="proj_img">
 									<img class="img_main" src="img/baby_e_commerce.png">
@@ -249,7 +330,7 @@
 				</div>
 				<div class="item">
 					<div class="row projects_block content">
-						<div class="col-xs-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_1">
 								<div class="proj_img">
 									<img class="img_main" src="img/dating_app.png">
@@ -272,7 +353,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_2">
 								<div class="proj_img">
 									<img class="img_main" src="img/wedding_site.png">
@@ -296,7 +377,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_3">
 								<div class="proj_img">
 									<img class="img_main" src="img/travel_guide.png">
@@ -320,7 +401,7 @@
 								<button class="but_detals">detals</button>
 							</div>
 						</div>
-						<div class="col-xs-4">
+						<div class="col-xs-8 col-md-4">
 							<div class="block_4">
 								<div class="proj_img">
 									<img class="img_main" src="img/baby_e_commerce.png">
@@ -531,6 +612,90 @@
 						</div>
 					</div>
 				</div>
+				<div class="item">
+					<div class="row ">
+						<div class="col-xs-16">
+							<div class="row team_block">
+								<div class="col-xs-4 block_1">
+									<div class="team_img">
+										<img class="img_main" src="img/david_1.png">
+									</div>
+									<p class="team_head">DAVID MORILLO</p>
+									<p class="team_text">CEO FOUNDER</p>
+									<button class="but_detals">LOOK AT ME</button>
+									<div class="col-xs-2 brandIcons">
+										<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+										<div class="skype_dive">
+											<i class="fa fa-square fa-2x" aria-hidden="true"></i>
+											<i class="fa fa-skype fa-1g skype" aria-hidden="true"></i>
+										</div>
+										<i class="fa fa-glide fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xs-4 block_2">
+									<div class="team_img">
+										<img class="img_main" src="img/isabella_1.png">
+									</div>
+									<p class="team_head">ISABELLA DOOMER</p>
+									<p class="team_text">TEAM DIRECTOR</p>
+									<button class="but_detals">LOOK AT ME</button>
+									<div class="col-xs-2 brandIcons">
+										<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+										<div class="skype_dive">
+											<i class="fa fa-square fa-2x" aria-hidden="true"></i>
+											<i class="fa fa-skype fa-1g skype" aria-hidden="true"></i>
+										</div>
+										<i class="fa fa-glide fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xs-4 block_3">
+									<div class="team_img">
+										<img class="img_main" src="img/arthur_1.png">
+									</div>
+									<p class="team_head">ARTHUR SIMON</p>
+									<p class="team_text">CREATIVE DIRECTOR</p>
+									<button class="but_detals">LOOK AT ME</button>
+									<div class="col-xs-2 brandIcons">
+										<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+										<div class="skype_dive">
+											<i class="fa fa-square fa-2x" aria-hidden="true"></i>
+											<i class="fa fa-skype fa-1g skype" aria-hidden="true"></i>
+										</div>
+										<i class="fa fa-glide fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-xs-4 block_4">
+									<div class="team_img">
+										<img class="img_main" src="img/amanda_1.png">
+									</div>
+									<p class="team_head">AMANDA AMAN</p>
+									<p class="team_text">COPY WRITER</p>
+									<button class="but_detals">LOOK AT ME</button>
+									<div class="col-xs-2 brandIcons">
+										<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+										<div class="skype_dive">
+											<i class="fa fa-square fa-2x" aria-hidden="true"></i>
+											<i class="fa fa-skype fa-1g skype" aria-hidden="true"></i>
+										</div>
+										<i class="fa fa-glide fa-2x" aria-hidden="true"></i>
+										<i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -546,104 +711,212 @@
 				</div>
 			</div>
 			<div class="gradient"></div>
-			<div class="row ">
-				<div class="col-xs-8 news_left">
-					<div class="row new_body">
-						<div class="col-xs-2">
-							<div class="data">
-								<p class="news_mon">dec</p>
-								<p class="news_day">28</p>
-								<p class="news_year">2013</p>
-							</div>
-							<div class="news_icon">
-								<p class="fa fa-heart-o fa-2x news_heart"></p>
-								<p class="fa fa-link fa-2x news_link"></p>
-								<p class="fa fa-comment-o fa-2x news_comment"></p>
+			<div id="owl_news">
+				<div class="item">
+					<div class="row ">
+						<div class="col-xs-8 news_left">
+							<div class="row new_body">
+								<div class="col-xs-2">
+									<div class="data">
+										<p class="news_mon">dec</p>
+										<p class="news_day">28</p>
+										<p class="news_year">2013</p>
+									</div>
+									<div class="news_icon">
+										<p class="fa fa-heart-o fa-2x news_heart"></p>
+										<p class="fa fa-link fa-2x news_link"></p>
+										<p class="fa fa-comment-o fa-2x news_comment"></p>
+									</div>
+								</div>
+								<div class="col-xs-14">
+									<div class="news_head">
+										<div class="news_img">
+											<img  src="img/bob-marley.png">
+										</div>
+										<div class="col-xs-14 news_info">
+											<div class="news_info_text">
+												<span>
+													<span class='begin'>writer</span>
+													<span class='middle'>bob marley/</span>
+													<span class='end'>finance</span>
+												</span>
+												<span class='right'>8 hours ago</span>
+											</div>
+											<div class="news_info_bottom">
+												<a href="#">
+													<img src="img/mountain.png">
+												</a>
+												<a href="#">
+													<img src="img/play.png">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="news_text">
+										<p class="news_header">
+											New Project ıs very comıng soon...
+										</p>
+										<p class="news_text_text">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
+										</p>
+									</div>
+									<button class="but_news">reade more</button>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-14">
-							<div class="news_head">
-								<div class="news_img">
-									<img  src="img/bob-marley.png">
-								</div>
-								<div class="col-xs-14 news_info">
-									<div class="news_info_text">
-										<span>
-											<span class='begin'>writer</span>
-											<span class='middle'>bob marley/</span>
-											<span class='end'>finance</span>
-										</span>
-										<span class='right'>8 hours ago</span>
+						<div class="col-xs-8 news_right">
+							<div class="row new_body">
+								<div class="col-xs-2">
+									<div class="data">
+										<p class="news_mon">dec</p>
+										<p class="news_day">23</p>
+										<p class="news_year">2013</p>
 									</div>
-									<div class="news_info_bottom">
-										<a href="#">
-											<img src="img/mountain.png">
-										</a>
-										<a href="#">
-											<img src="img/play.png">
-										</a>
+									<div class="news_icon">
+										<p class="fa fa-heart-o fa-2x news_heart"></p>
+										<p class="fa fa-link fa-2x news_link"></p>
+										<p class="fa fa-comment-o fa-2x news_comment"></p>
 									</div>
 								</div>
+								<div class="col-xs-14">
+									<div class="news_head">
+										<div class="news_img">
+											<img  src="img/rosso.png">
+										</div>
+										<div class="col-xs-14 news_info">
+											<div class="news_info_text">
+												<span>
+													<span class='begin'>writer</span>
+													<span class='middle'>michale rosso/</span>
+													<span class='end'>personal resources</span>
+												</span>
+												<span class='right'>5 day ago</span>
+											</div>
+											<div class="news_info_bottom">
+												<a href="#">
+													<img src="img/mountain.png">
+												</a>
+												<a href="#">
+													<img src="img/play.png">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="news_text">
+										<p class="news_header">
+											our new team frıends...
+										</p>
+										<p class="news_text_text">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
+										</p>
+									</div>
+									<button class="but_news">reade more</button>
+								</div>
 							</div>
-							<div class="news_text">
-								<p class="news_header">
-									New Project ıs very comıng soon...
-								</p>
-								<p class="news_text_text">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
-								</p>
-							</div>
-							<button class="but_news">reade more</button>
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-8 news_right">
-					<div class="row new_body">
-						<div class="col-xs-2">
-							<div class="data">
-								<p class="news_mon">dec</p>
-								<p class="news_day">23</p>
-								<p class="news_year">2013</p>
-							</div>
-							<div class="news_icon">
-								<p class="fa fa-heart-o fa-2x news_heart"></p>
-								<p class="fa fa-link fa-2x news_link"></p>
-								<p class="fa fa-comment-o fa-2x news_comment"></p>
+				<div class="item">
+					<div class="row ">
+						<div class="col-xs-8 news_left">
+							<div class="row new_body">
+								<div class="col-xs-2">
+									<div class="data">
+										<p class="news_mon">dec</p>
+										<p class="news_day">28</p>
+										<p class="news_year">2013</p>
+									</div>
+									<div class="news_icon">
+										<p class="fa fa-heart-o fa-2x news_heart"></p>
+										<p class="fa fa-link fa-2x news_link"></p>
+										<p class="fa fa-comment-o fa-2x news_comment"></p>
+									</div>
+								</div>
+								<div class="col-xs-14">
+									<div class="news_head">
+										<div class="news_img">
+											<img  src="img/man1.png">
+										</div>
+										<div class="col-xs-14 news_info">
+											<div class="news_info_text">
+												<span>
+													<span class='begin'>writer</span>
+													<span class='middle'>bob marley/</span>
+													<span class='end'>finance</span>
+												</span>
+												<span class='right'>8 hours ago</span>
+											</div>
+											<div class="news_info_bottom">
+												<a href="#">
+													<img src="img/mountain.png">
+												</a>
+												<a href="#">
+													<img src="img/play.png">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="news_text">
+										<p class="news_header">
+											New Project ıs very comıng soon...
+										</p>
+										<p class="news_text_text">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
+										</p>
+									</div>
+									<button class="but_news">reade more</button>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-14">
-							<div class="news_head">
-								<div class="news_img">
-									<img  src="img/rosso.png">
-								</div>
-								<div class="col-xs-14 news_info">
-									<div class="news_info_text">
-										<span>
-											<span class='begin'>writer</span>
-											<span class='middle'>michale rosso/</span>
-											<span class='end'>personal resources</span>
-										</span>
-										<span class='right'>5 day ago</span>
+						<div class="col-xs-8 news_right">
+							<div class="row new_body">
+								<div class="col-xs-2">
+									<div class="data">
+										<p class="news_mon">dec</p>
+										<p class="news_day">23</p>
+										<p class="news_year">2013</p>
 									</div>
-									<div class="news_info_bottom">
-										<a href="#">
-											<img src="img/mountain.png">
-										</a>
-										<a href="#">
-											<img src="img/play.png">
-										</a>
+									<div class="news_icon">
+										<p class="fa fa-heart-o fa-2x news_heart"></p>
+										<p class="fa fa-link fa-2x news_link"></p>
+										<p class="fa fa-comment-o fa-2x news_comment"></p>
 									</div>
 								</div>
+								<div class="col-xs-14">
+									<div class="news_head">
+										<div class="news_img">
+											<img  src="img/girl1.png">
+										</div>
+										<div class="col-xs-14 news_info">
+											<div class="news_info_text">
+												<span>
+													<span class='begin'>writer</span>
+													<span class='middle'>michale rosso/</span>
+													<span class='end'>personal resources</span>
+												</span>
+												<span class='right'>5 day ago</span>
+											</div>
+											<div class="news_info_bottom">
+												<a href="#">
+													<img src="img/mountain.png">
+												</a>
+												<a href="#">
+													<img src="img/play.png">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="news_text">
+										<p class="news_header">
+											our new team frıends...
+										</p>
+										<p class="news_text_text">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
+										</p>
+									</div>
+									<button class="but_news">reade more</button>
+								</div>
 							</div>
-							<div class="news_text">
-								<p class="news_header">
-									our new team frıends...
-								</p>
-								<p class="news_text_text">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged...
-								</p>
-							</div>
-							<button class="but_news">reade more</button>
 						</div>
 					</div>
 				</div>
@@ -661,36 +934,74 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-xs-16">
-					<div class="clients_pictograph">
-						<a href="#">
-							<img src="img/compact.png">
-						</a>
-						<a href="#">
-							<img src="img/tvdigital.png">
-						</a>
-						<a href="#">
-							<img src="img/changes.png">
-						</a>
-						<a href="#">
-							<img src="img/finance.png">
-						</a>
-						<a href="#">
-							<img src="img/lazo.png">
-						</a>
-						<a href="#">
-							<img src="img/playstudio.png">
-						</a>
-						<a href="#">
-							<img src="img/nexomedia.png">
-						</a>
-						<a href="#">
-							<img src="img/motion.png">
-						</a>
+			<div id="owl_clients">
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-16">
+							<div class="clients_pictograph">
+								<a href="#">
+									<img src="img/compact.png">
+								</a>
+								<a href="#">
+									<img src="img/tvdigital.png">
+								</a>
+								<a href="#">
+									<img src="img/changes.png">
+								</a>
+								<a href="#">
+									<img src="img/finance.png">
+								</a>
+								<a href="#">
+									<img src="img/lazo.png">
+								</a>
+								<a href="#">
+									<img src="img/playstudio.png">
+								</a>
+								<a href="#">
+									<img src="img/nexomedia.png">
+								</a>
+								<a href="#">
+									<img src="img/motion.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-xs-16">
+							<div class="clients_pictograph">
+								<a href="#">
+									<img src="img/compact.png">
+								</a>
+								<a href="#">
+									<img src="img/tvdigital.png">
+								</a>
+								<a href="#">
+									<img src="img/changes.png">
+								</a>
+								<a href="#">
+									<img src="img/finance.png">
+								</a>
+								<a href="#">
+									<img src="img/lazo.png">
+								</a>
+								<a href="#">
+									<img src="img/playstudio.png">
+								</a>
+								<a href="#">
+									<img src="img/nexomedia.png">
+								</a>
+								<a href="#">
+									<img src="img/motion.png">
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			
+
 		</div>
 	</section>
 	<!-- ==============================  <footer id="contact"> ======== -->
@@ -705,15 +1016,25 @@
 				</div>
 				<div class="col-xs-6">
 					<div class="contact_middle">
-						<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-						<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-						<i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-						<div class="skype_dive">
-							<i class="fa fa-square fa-2x" aria-hidden="true"></i>
+						<a href="#">
+							<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="#">
 							<i class="fa fa-skype fa-1g skype" aria-hidden="true"></i>
-						</div>
-						<i class="fa fa-glide fa-2x" aria-hidden="true"></i>
-						<i class="fa fa-behance-square fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-glide-g fa-2x" aria-hidden="true"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-behance fa-2x" aria-hidden="true"></i>
+						</a>
+						
 					</div>
 				</div>
 				<div class="col-xs-4">
@@ -721,9 +1042,16 @@
 						<p class='contact_end_header'>NEWSLETTER</p>
 						<p class='contact_end_text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 						<div class="letter">
-							<input  type="text"/>
-							<span class='fa fa-envelope-o fa-lg'>
-							</span>
+							<form action="#">
+								<input  type="text" name="text_letter"/>
+								<input type="submit" class=" letter_submit" value="">
+							</form>
+
+							<!-- <input  type="text"/>
+							<a href="#">
+								<span class='fa fa-envelope-o fa-lg'></span>
+							</a> -->
+							
 						</div>
 					</div>
 				</div>
@@ -736,85 +1064,104 @@
 					</div>
 				</div>
 			</div>
-			<div class="contact_gradient"></div>
-			<div class="row contact_info">
-				<div class="col-xs-16">
-					<div class="row">
-						<div class="col-xs-4 block">
-							<p class="city">SYDNEY</p>
-							<p class="address">Level 6, 341 George St Sydney, NSW, 2000, Australia</p>
-							<div class="tel_num">
-								<div class="tel">
-									<p>Phone</p>
-									<p>Fax</p>
-									<p>e-mail</p>
+			<!--<div class="contact_gradient"></div>-->
+
+		</div>
+
+		<section class="gradient_back">
+			<div class="container">
+				<div class="row contact_info">
+					<div class="col-xs-16">
+						<div class="row">
+							<div class="col-xs-4 block">
+								<p class="city">SYDNEY</p>
+								<p class="address">Level 6, 341 George St Sydney, NSW, 2000, Australia</p>
+								<div class="tel_num">
+									<div class="tel">
+										<p>Phone</p>
+										<p>Fax</p>
+										<p>e-mail</p>
+									</div>
+									<div class="num">
+										<p>+61 2 9262 1443</p>
+										<p>+61 2 8208 7383</p>
+										<p>sydney@quarantie.com</p>
+									</div>
 								</div>
-								<div class="num">
-									<p>+61 2 9262 1443</p>
-									<p>+61 2 8208 7383</p>
-									<p>sydney@quarantie.com</p>
+							</div>
+							<div class="col-xs-4 block">
+								<p class="city">San Francısco</p>
+								<p class="address">1098 Harrison Street San Francisco, CA, 94103 USA</p>
+								<div class="tel_num">
+									<div class="tel">
+										<p>Phone</p>
+										<p>Fax</p>
+										<p>e-mail</p>
+									</div>
+									<div class="num">
+										<p>+1 415 701 1110</p>
+										<p>+1 415 449 6222</p>
+										<p>sanfrancisco@quarantie.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 block">
+								<p class="city">Amsterdam</p>
+								<p class="address">Keizersgracht 311 1016EE Amsterdam Netherlands</p>
+								<div class="tel_num">
+									<div class="tel">
+										<p>Phone</p>
+										<p>Fax</p>
+										<p>e-mail</p>
+									</div>
+									<div class="num">
+										<p>+31 20 796 0060</p>
+										<p>+31 20 524 8260</p>
+										<p>amsterdam@quarantie.com</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-4 block">
+								<p class="city">Tokyo</p>
+								<p class="address">22F Shibuya Mark City West 1-12-1 Dogenzaka Shibuya-ku Tokyo 150-0043 Japan</p>
+								<div class="tel_num">
+									<div class="tel">
+										<p>Phone</p>
+										<p>Fax</p>
+										<p>e-mail</p>
+									</div>
+									<div class="num">
+										<p>+81 (0)3-4360-5376</p>
+										<p>+81 (0)3-4360-5301</p>
+										<p>japan@quarantie.com</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-xs-4 block">
-							<p class="city">San Francısco</p>
-							<p class="address">1098 Harrison Street San Francisco, CA, 94103 USA</p>
-							<div class="tel_num">
-								<div class="tel">
-									<p>Phone</p>
-									<p>Fax</p>
-									<p>e-mail</p>
-								</div>
-								<div class="num">
-									<p>+1 415 701 1110</p>
-									<p>+1 415 449 6222</p>
-									<p>sanfrancisco@quarantie.com</p>
-								</div>
+						<div class="row">
+							<div class="col-xs-8 col-xs-offset-4 div_end">
+								<span class='end'>Copyright © 2013 - Quarantie PSD Template - Design by Göksel Vançin -  All Right Reserved</span>
 							</div>
-						</div>
-						<div class="col-xs-4 block">
-							<p class="city">Amsterdam</p>
-							<p class="address">Keizersgracht 311 1016EE Amsterdam Netherlands</p>
-							<div class="tel_num">
-								<div class="tel">
-									<p>Phone</p>
-									<p>Fax</p>
-									<p>e-mail</p>
-								</div>
-								<div class="num">
-									<p>+31 20 796 0060</p>
-									<p>+31 20 524 8260</p>
-									<p>amsterdam@quarantie.com</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-4 block">
-							<p class="city">Tokyo</p>
-							<p class="address">22F Shibuya Mark City West 1-12-1 Dogenzaka Shibuya-ku Tokyo 150-0043 Japan</p>
-							<div class="tel_num">
-								<div class="tel">
-									<p>Phone</p>
-									<p>Fax</p>
-									<p>e-mail</p>
-								</div>
-								<div class="num">
-									<p>+81 (0)3-4360-5376</p>
-									<p>+81 (0)3-4360-5301</p>
-									<p>japan@quarantie.com</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-8 col-xs-offset-4 div_end">
-							<span class='end'>Copyright © 2013 - Quarantie PSD Template - Design by Göksel Vançin -  All Right Reserved</span>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+
+
+
 	</footer>
-	<script src="plagins/owl.carousel2/owl.carousel/owl.carousel.min.js"></script>
+
+	<div class="up-arrow">
+		<span class="fa fa-angle-left fa-2x"></span>
+	</div>
+
+
+
+	<script src="plugins/plugin_dropdownList/dropdownList.js"></script>
+	<script src="plugins/owl.carousel2/owl.carousel/owl.carousel.min.js"></script>
+	<script src="js/my_plugin.js"></script>
 	<script src="script.js"></script>
 </body>
 </html>

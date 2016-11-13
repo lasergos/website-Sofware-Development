@@ -8,12 +8,6 @@ $(document).ready(function() {
 		}
 	})
 
-
-	
-
-
-
-
 	$('#owl').owlCarousel({
  		items: 1,
  		nav: true,
@@ -30,7 +24,6 @@ $(document).ready(function() {
  		rewindNav: false,
  	});
 
- 	/**/
  	$('#owl_projects').owlCarousel({
  		items: 1,
  		nav: true,
@@ -38,23 +31,67 @@ $(document).ready(function() {
  		loop: true,
  		navText:  ['<span class="fa fa-angle-left fa-2x controlHandle_proj" ></span>','<span class="fa fa-angle-right fa-2x controlHandle_proj" ></span>' ],
  		rewindNav: false,
- 		controlsClass:'my_proj_controls',
+ 		// controlsClass:'my_proj_controls',
  		navContainerClass: 'container_proj',
 		navClass: ['left_proj', 'right_proj'],
  	});
 
- 	/**/
  	$('#owl_team').owlCarousel({
+ 		items: 1,
+ 		nav: true,
+ 		dots: true,
+ 		center: true,
+ 		dotsClass: 'my_dots_team',
+ 		dotClass: 'my_dot_team',
+ 		dotClass: 'my_dot_team active',
+ 		loop: true,
+ 		navText:  ['<span class="fa fa-angle-left fa-2x controlHandle_proj" ></span>','<span class="fa fa-angle-right fa-2x controlHandle_proj" ></span>' ],
+ 		rewindNav: false,
+ 		// controlsClass:'my_team_controls',
+ 		navContainerClass: 'container_team',
+		navClass: ['left_team', 'right_team'],
+ 	});
+ 	
+ 	$('#owl_news').owlCarousel({
  		items: 1,
  		nav: true,
  		dots: false,
  		loop: true,
  		navText:  ['<span class="fa fa-angle-left fa-2x controlHandle_proj" ></span>','<span class="fa fa-angle-right fa-2x controlHandle_proj" ></span>' ],
  		rewindNav: false,
- 		controlsClass:'my_team_controls',
- 		navContainerClass: 'container_team',
-		navClass: ['left_team', 'right_team'],
+ 		// controlsClass:'my_news_controls',
+ 		navContainerClass: 'container_news',
+		navClass: ['left_news', 'right_news'],
  	});
+
+ 	$('#owl_clients').owlCarousel({
+ 		items: 1,
+ 		nav: true,
+ 		dots: false,
+ 		loop: true,
+ 		navText:  ['<span class="fa fa-angle-left fa-2x controlHandle_proj" ></span>','<span class="fa fa-angle-right fa-2x controlHandle_proj" ></span>' ],
+ 		rewindNav: false,
+ 		// controlsClass:'my_clients_controls',
+ 		navContainerClass: 'container_clients',
+		navClass: ['left_clients', 'right_clients'],
+ 	});
+
+
+	$('.up-arrow').myPlugin({
+		// heightParam: 2,
+		'services': {
+			'php development': 'http://google.com'
+		}
+	});
+
+	$('.main_li').dropdownListPlugin({
+		// heightParam: 2,
+		/*'services': {
+			'php development': 'http://google.com'
+		}*/
+	});
+
+// dropdownList
 
 
 });

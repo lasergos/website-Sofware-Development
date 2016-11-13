@@ -58,15 +58,54 @@ header{
 			white-space: nowrap;
 		}
 	}
+	
+	.head_right{
+		height: 13vh;
+
+		.row{
+			height:inherit;
+
+			.col-xs-1{
+				height:inherit;
+
+				.home_div{
+					height:inherit;
+					width: 28px;
+					// background-color:#b5dcb5;
+					.home{
+						position: absolute;
+						top: 50%; 
+	    				transform: translate(-50%, -50%);
+
+	    				&:hover{
+	    					.home_div{
+	    						border-bottom: 6px solid $brand-color;
+	    					}
+							
+	    				}
+					}
+
+					&:hover{
+	    				border-bottom: 6px solid $brand-color;
+	    			}
+				}
+			}
+		}
+	}
 
 	ol{
 		padding-left: 0;
 
-		li{
+		.main_li{
 			display: inline-block;
-		    margin: 1rem 0.4rem 0 1rem;
 		    font-family: 'Avenir-Roman';
 		    font-size: 0.9rem;
+			position: relative;
+			height: 13vh;
+			margin-left: 0.7rem;
+			margin-right: 0.7rem;
+			display: inline-flex;
+			align-items: center;
 
 		    a{
 				color: rgb(55, 54, 69);
@@ -76,36 +115,57 @@ header{
 		    		text-decoration: none;
 		    	}
 			}
+
+			/* &:hover {
+				border-top: 6px solid $aubergine-color;
+				border-bottom: 6px solid $brand-color;
+				.inner {
+					display: block;
+				}
+			} */
 		}
 	}
 
 	.brandIcons{
-		display: $inline;
-		color: $brand-color;
+		display: flex;
+		align-items: center;
+		height: inherit;
+
+		a {
+			color: $brand-color;
+		}
 
 		i{
 			margin: 5.5px;
 			cursor: pointer;
+    		height: 24px;
 		}
 	}
+}
 
-	.search{
+.search{
+	display: $inline;
+    top: 50%;
+	transform: translateY(-50%);
+
+
+	form{
 		display: $inline;
-	}
+		input[type="text"] {
+			border: $main_border;
+			width: calc(100% - 24px);
+		}
 
-	input{
-		border: $main_border;
-		width: calc(100% - 24px);
-	}
-
-	span {
-		background-image: url('../img/search.png');
-		background-repeat: no-repeat;
-		background-position: center, center;
-		border: $main_border;
-		cursor: pointer;
-		width: 24px;
-		height: 24px;
-		display: inline-block;
+		.search_submit {
+			background-image: url('../img/search.png');
+			background-repeat: no-repeat;
+			background-position: center, center;
+			border: $main_border;
+			cursor: pointer;
+			width: 24px;
+			height: 24px;
+			display: inline-block;
+		}
 	}
 }
+

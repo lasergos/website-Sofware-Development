@@ -1,0 +1,36 @@
+$aubergine-color: rgb(55, 54, 69);
+$brand-color: rgb(110, 155, 202);
+ 
+.inner {
+	display: none;
+	position: absolute;
+	bottom: -6px;
+	padding: 0;
+    transform: translateY(100%);
+ /**/
+	li {
+		position: relative;
+		display: block;
+		height: 4.6rem;
+		width: 14.2rem;
+		background-color: $brand-color;
+		border-bottom: 1px solid white;
+		margin-top: 0;
+		cursor: pointer;
+
+		&:hover{
+			background-color: $aubergine-color;
+			display: block;
+		}
+
+		.inner_a{
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-family: "Avenir-Roman";
+			font-size: 1rem;
+		}
+	} 
+}
+/* */

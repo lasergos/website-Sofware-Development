@@ -1,8 +1,7 @@
-@import 'services.scss';
-
 #projects{
 	position: relative;
 	height: 65rem;
+	background: repeating-linear-gradient(-45deg, white 0px, white 8px, #dbdbdb 8px, #dbdbdb 9px);
 }
 
 .gradient_proj{
@@ -31,17 +30,25 @@
 			height: inherit;
 			width: 100%;
 		    position: absolute;
-		    top: 0;
-		    opacity: 0;
-		    transition: opacity .5s ease;
+		    top: 100%;
+		    //opacity: 0;
+		    transition: top .5s ease;
 		    z-index: 100;
-		    align-items: center;
-			justify-content: center;
-		    display: flex;
+		    //align-items: center;
+            //justify-content: center;
+		    //display: flex;
 
 		    .proj_cont{
 		    	display: flex;
 		    	height: 3.5rem;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+
+				& > div {
+					cursor: pointer;
+				}
 
 				.proj_heart{
 					height: 3.5rem;
@@ -79,8 +86,9 @@
 		&:hover,
 		.proj_cont:hover {
 			.proj_baground {
-				opacity: 1;
+				//opacity: 1;
 				background-color: rgba(147, 172, 204, 0.7);
+				top: 0;
 			}	
 
 		}
@@ -154,3 +162,9 @@
 		}
 	}
 }
+//
+//@media (max-width: 768px) {
+//	.right_proj {
+//		transform: translateX(-100%);
+//	}
+//}
