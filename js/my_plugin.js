@@ -1,16 +1,7 @@
-/*
-* $(...).myPlugin({})
-* 
-* */
-
 (function ($) {
     
     $.fn.myPlugin = function (options) {
 
-        /*
-        * дополнительный код
-        * */
-        
         let defaults = {
             heightParam: .5,
         };
@@ -20,11 +11,6 @@
         return this.each(function(index, item){
 
             $(item).hide();
-
-            /*
-            *   основной код
-            * */
-            // console.log($(item).text());
 
             $(window).scroll(function () {
                 let current = $(window).scrollTop(),
@@ -42,8 +28,6 @@
             })
 
         });
-        
-        
     }    
     
 })(jQuery);

@@ -78,20 +78,50 @@ $(document).ready(function() {
 
 
 	$('.up-arrow').myPlugin({
-		// heightParam: 2,
-		'services': {
-			'php development': 'http://google.com'
-		}
+		 heightParam: 1,
 	});
 
 	$('.main_li').dropdownListPlugin({
-		// heightParam: 2,
-		/*'services': {
-			'php development': 'http://google.com'
-		}*/
+		'services':{
+			'web development': '#',
+			'app development': '#',
+			'php development': '#',
+			'wordpress': '#',
+		},
+
+		'projects':{
+			'dating app': '#',
+			'wedding site': '#',
+			'travel guide': '#',
+			'baby e-commerce': '#',
+		},
+
+		'team':{
+			'david morillo' :'#',
+			'isabella doomer' :'#',
+			'arthur simon' :'#',
+			'amanda aman' :'#',
+		},
+
+		'news':{
+			'bob marley' :'#',
+			'michale rosso' :'#',
+			'bob marley2' :'#',
+			'michale rosso2' :'#',
+		},
+
+		'clients':{
+			'compact' :'#',
+			'tv digital' :'#',
+			'changas' :'#',
+			'finance' :'#',
+		},
+
+		'contact':{
+			'sidney' :'#',
+			'san francisco' :'#',
+			'amsterdam' :'#',
+			'tokyo' :'#',
+		},
 	});
-
-// dropdownList
-
-
 });

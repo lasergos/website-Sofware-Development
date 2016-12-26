@@ -108,8 +108,12 @@ header{
 			align-items: center;
 
 		    a{
-				color: rgb(55, 54, 69);
+				color: $aubergine-color;
 		    	text-decoration: none;
+		    	text-transform: uppercase;
+		    	
+
+
 
 		    	&:hover {
 		    		text-decoration: none;

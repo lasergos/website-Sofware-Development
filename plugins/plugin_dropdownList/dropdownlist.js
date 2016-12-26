@@ -1,99 +1,48 @@
-/*
-* $(...).dropdownListPlugin({})
-* 
-* */
-
 (function ($) {
-    
-    $.fn.dropdownListPlugin = function (options) {
-
-        /*
-        * дополнительный код
-        * */
-        /*<ul class="inner">
-            <li><a href="#" class="inner_a">***</a></li>
-            <li><a href="#" class="inner_a">***</a></li>
-            <li><a href="#" class="inner_a">***</a></li>
-            <li><a href="#" class="inner_a">***</a></li>
-        </ul>*/
-
-        function createUl (){
-            var $ul = $('<ul class="inner"></ul>'),
-                $li = $('<li><a href="#" class="inner_a">***</a></li>');
-
-            $($ul).append($li);
-            $($ul).append($li);
-            $($ul).append($li);
-            $($ul).append($li);
-            $('ul:eq(0)').text('');// для динамического заполнения пунктов.
-            // как пункты перебирать?
-            $(item).append($ul);
+    function generateList(container, content) {
+        let $ul = $('<ul class="inner" ></ul>'); 
+        for (let listElement in content){
+            $ul.append('<li class="inner_a" style="height:0px;"><a href="' + content[listElement] + '">' + listElement + '</a></li>');
         }
+        $(container).append($ul);
+    }
 
+    function handleHover(e) {
+        $(this).find('ul').css('display','block');
+        $(this).find('ul').children().animate({
+            height: '30px',
+        }, 200);
+        
+    }
 
-       
-       
-        /*
-        $(item).on('click', function () {
-            $(window).scrollTop(0);
-        })
-        */
+    function handleHoverOff(e) {
+        $(this).find('ul').css('display','none');
+        $(this).find('ul').children().css('height', '0');
+    }
 
-        //---------------------------------------
-        /*let defaults = {
-            heightParam: .5,
-        };
-        options = $.extend(defaults, options);*/
-        //---------------------------------------
+    let defaults = {}; // Данные по умолчанию. Нет необходимости
 
-       
+    $.fn.dropdownListPlugin = function (options) {
+        
+        const keys = Object.keys(options);   //ключи объекта  options
 
         return this.each(function(index, item){
             
-             $(item).on('hover',function(){
-                console.log('hello');
-            });
-
-            /*
-            *   основной код
-            * */
-            //---------------------------------------
-            // console.log($(item).text());
-            //---------------------------------------
-            /*$(item).hide();
-
-            $(window).scroll(function () {
-                let current = $(window).scrollTop(),
-                    height = $(window).height();
-
-                if (current >= height * options.heightParam){
-                    $(item).show();
-                } else {
-                    $(item).hide();
-                }
-            });
-
-            $(item).on('click', function () {
-                $(window).scrollTop(0);
-            })*/
-            //-------------------------------------------
+            var title = $(item).find('a').text();
+            title.toUpperCase();
+            if (keys.some(function (name) {
+                    return name === title;
+                })){
+                
+                generateList(item, options[title]);
+            }
+            $(item).mouseenter(handleHover);
+            $(item).on('mouseleave', handleHoverOff);
         });
     }    
     
 })(jQuery);
 
-
-
 /* TO DO
-* 1 Обработчик события JQ на наведение мыши. 
-* 2 По факту наведения курсора на this генерировать список с <ul class="inner">
-*                                                                <li><a href="#" class="inner_a">***</a></li>
-*                                                                <li><a href="#" class="inner_a">***</a></li>
-*                                                                <li><a href="#" class="inner_a">***</a></li>
-*                                                                <li><a href="#" class="inner_a">***</a></li>
-*                                                           </ul>
-* 3 Продумать заполнение динамически создаваемого списка
-* 4 Подключить плагин к проекту 
-*                               css <link rel="stylesheet" href="plugins/plugin_dropdownList/dropdownList.css">
-*                               js  <script src="plugins/plugin_dropdownList/dropdownList.js"></script>
+    
 **/
